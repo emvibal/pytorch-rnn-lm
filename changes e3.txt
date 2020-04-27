@@ -1,0 +1,16 @@
+changes e3.2
+modified download.sh
+1)added sherloc_novels in data
+2)created sherlock folder in data folder
+3) created raw folder inside sherlock folder
+3) replaced all the trumps stuff with sherlock stuff
+4)changed vocab size to 10000
+modified train.sh
+*since I am using a GPU I changed some of the settings:
+    CUDA_VISIBLE_DEVICES=0
+    --cuda
+modified generate.sh
+*since I am using a GPU I changed some of the settings:
+    CUDA_VISIBLE_DEVICES=0
+    --cuda
+1)changed the data source

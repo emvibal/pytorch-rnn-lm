@@ -15,10 +15,11 @@ device=""
 SECONDS=0
 
 (cd $tools/pytorch-examples/word_language_model &&
-    CUDA_VISIBLE_DEVICES=$device OMP_NUM_THREADS=$num_threads python main.py --data $data/trump \
+    CUDA_VISIBLE_DEVICES=0 OMP_NUM_THREADS=$num_threads python main.py --data $data/harry_potter \
         --epochs 40 \
-        --emsize 200 --nhid 200 --dropout 0.5 --tied \
-        --save $models/model.pt
+        --emsize 300 --nhid 300 --dropout 0.005 --tied \
+        --save $models/model_hp_vocab10k_embed300_dropout.005_epoch40.pt \
+        --cuda
 )
 
 echo "time taken:"
