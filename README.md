@@ -40,3 +40,7 @@ The training process can be interrupted at any time, and the best checkpoint wil
 Generate (sample) some text from a trained model with:
 
     ./scripts/generate.sh
+
+_______________________________________________________________________________________________________________________________
+
+Results of the experiments done are on a separate pdf
