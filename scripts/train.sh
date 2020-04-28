@@ -15,10 +15,10 @@ device=""
 SECONDS=0
 
 (cd $tools/pytorch-examples/word_language_model &&
-    CUDA_VISIBLE_DEVICES=0 OMP_NUM_THREADS=$num_threads python main.py --data $data/harry_potterb \
-        --epochs 40 \
-        --emsize 300 --nhid 300 --dropout 0.4 --tied \
-        --save $models/model_hp_vocab10k_embed300_dropout.4_epoch40.pt \
+    CUDA_VISIBLE_DEVICES=0 OMP_NUM_THREADS=$num_threads python main.py --data $data/harry_potter \
+        --epochs 50 \
+        --emsize 400 --nhid 400 --dropout 0.6 --tied \
+        --save $models/model_hp_vocab5k_embed400_dropout.6_epoch40.pt \
         --cuda
 )
 
