@@ -81,7 +81,7 @@ Make sure to set/change the path/folder name of your data source
 
 Put in your selected language model and its path in checkpoint
 
-I changes the number of words to be generated fromm 100 to 500
+I changes the number of words to be generated from 100 to 500
 
 Assign an easy to understand filename for your sample output file. I opted to follow the naming convention I made in order to know which sample was generated from which model
 
